@@ -1,0 +1,108 @@
+El programador sigue teniendo complicaciones para ajustar su código cuando ingresan valores, pero necesita ayuda, ahora su jefe, que no conoce mucho de programación, quiere un programa para calcular los rendimientos de 4 vendedores y ver la diferencia entre estos.
+
+El programa debe recibir los 4 valores de los vendedores, que se calcula en ventas por mes, después, el programa debe ordenarlos de menor a mayor, siendo 4 el mayor y 1 el menor, una vez hecho esto debe hacer las siguientes operaciones.
+
+Mostrar los números ordenados
+El resultado del 4 menos el 1
+El resultado del 2 menos el 1
+El resultado del 4 menos el 3
+El resultado del 3 menos el 2
+La suma de todas las ventas y el promedio general
+------------
+Algoritmo apz
+
+    Definir v1, v2, v3, v4 Como Real
+    Definir aux Como Real
+    
+
+    Escribir "Ingrese venta del vendedor 1:"
+    Leer v1
+    Escribir "Ingrese venta del vendedor 2:"
+    Leer v2
+    Escribir "Ingrese venta del vendedor 3:"
+    Leer v3
+    Escribir "Ingrese venta del vendedor 4:"
+    Leer v4
+    
+
+    Si v1 > v2 Entonces
+        aux = v1
+        v1 = v2
+        v2 = aux
+    FinSi
+    
+
+    Si v2 > v3 Entonces
+        aux = v2
+        v2 = v3
+        v3 = aux
+    FinSi
+    
+
+    Si v3 > v4 Entonces
+        aux = v3
+        v3 = v4
+        v4 = aux
+    FinSi
+    
+
+    Si v1 > v2 Entonces
+        aux = v1
+        v1 = v2
+        v2 = aux
+    FinSi
+    
+
+    Si v2 > v3 Entonces
+        aux = v2
+        v2 = v3
+        v3 = aux
+    FinSi
+    
+
+    Si v1 > v2 Entonces
+        aux = v1
+        v1 = v2
+        v2 = aux
+    FinSi
+    
+
+    Escribir "Valores ordenados (menor a mayor):"
+    Escribir "1: ", v1
+    Escribir "2: ", v2
+    Escribir "3: ", v3
+    Escribir "4: ", v4
+    
+    Escribir "4 menos 1: ", v4 - v1
+    Escribir "2 menos 1: ", v2 - v1
+    Escribir "4 menos 3: ", v4 - v3
+    Escribir "3 menos 2: ", v3 - v2
+    
+    Escribir "Suma total: ", v1 + v2 + v3 + v4
+    Escribir "Promedio: ", (v1 + v2 + v3 + v4) / 4
+    
+FinAlgoritmo
+
+----------------
+
+*** Ejecución Iniciada. ***
+Ingrese venta del vendedor 1:
+> 222
+Ingrese venta del vendedor 2:
+> 333
+Ingrese venta del vendedor 3:
+> 444
+Ingrese venta del vendedor 4:
+> 555
+Valores ordenados (menor a mayor):
+1: 222
+2: 333
+3: 444
+4: 555
+4 menos 1: 333
+2 menos 1: 111
+4 menos 3: 111
+3 menos 2: 111
+Suma total: 1554
+Promedio: 388.5
+*** Ejecución Finalizada. ***
