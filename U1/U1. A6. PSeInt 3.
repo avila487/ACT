@@ -1,0 +1,47 @@
+Algoritmo sin_titulo
+	Escribir "Ingrese su nombre "
+    Leer nombre
+    Escribir "Ingrese su edad "
+    Leer edad
+    Escribir "Ingrese nota del examen "
+    Leer examen
+    Escribir "Ingrese nota de tareas "
+    Leer tareas
+    Escribir "Ingrese nota de trabajos en clase "
+    Leer trabajos
+    promedio =  examen * .30 + tareas * .20 + trabajos * 0.50
+    Escribir "Nombre: " nombre
+    Escribir "Edad: " edad
+    Escribir "Examen: " examen
+    Escribir "Tareas: " tareas
+    Escribir "Trabajos: " trabajos
+    Escribir "Promedio final: " promedio
+    Si promedio >= 6 Entonces
+        Escribir " Verdadero"
+    Sino
+        Escribir "Falso"
+    FinSi
+FinAlgoritmo
+----------------------------
+
+*** Ejecución Iniciada. ***
+Ingrese su nombre
+> JV
+Ingrese su edad
+> 19
+Ingrese nota del examen
+> 10
+Ingrese nota de tareas
+> 10
+Ingrese nota de trabajos en clase
+> 9
+Nombre: JV
+Edad: 19
+Examen: 10
+Tareas: 10
+Trabajos: 9
+Promedio final: 9.5
+
+
+
+
