@@ -1,0 +1,29 @@
+
+Algoritmo sin_titulo
+
+		Escribir "Horas trabajadas:"
+		Leer hr
+		Escribir "Pago por hora:"
+		Leer pagoH
+		
+		bruto = hr * pagoH
+		impuesto = bruto * 0.15
+		seguridads = bruto * 0.10
+		neto = bruto - impuesto - seguridads
+		
+		Escribir "Salario bruto ", bruto
+		Escribir "Impuestos 15% ", impuesto
+		Escribir "Seguridad social 10% ", seguridads
+		Escribir "Salario neto ", neto
+FinAlgoritmo
+-----------------
+*** Ejecución Iniciada. ***
+Horas trabajadas:
+> 2
+Pago por hora:
+> 300
+Salario bruto 600
+Impuestos 15% 90
+Seguridad social 10% 60
+Salario neto 450
+*** Ejecución Finalizada. ***
