@@ -1,0 +1,37 @@
+Diseña un algoritmo que resuelva el siguiente problema.
+
+Un programador desea saber qué unidad de medida de datos debe ser la más adecuada dependiendo de los bytes que ingrese el usuario. Las unidades a revisar son KB, MB, GB, TB y PB. Usa la siguiente tabla de referencia.
+Si el usuario ingresa 5045 bytes, este se divide entre 1024 y el mensaje debería ser 4.92 KB. 
+--------------------
+Algoritmo EvaluarEdad
+    Escribir "Ingresa los bytes"
+    Leer bytes
+    Si bytes >= 1024 Entonces 
+		unidad = "KB"
+        Escribir "los bytes son " bytes / 1024 ""  unidad
+	FinSi
+        Si bytes >= 1048576  Entonces
+			unidad = "MB"
+            Escribir  bytes / 1048576 "" unidad
+		FinSi
+		si bytes >= 10973741824 Entonces
+			unidad = "GB"
+			Escribir  bytes / 10973741824 "" unidad
+		FinSi
+		Si bytes >= 1099511627776 Entonces 
+			unidad = "TB"
+			Escribir "los bytes son " bytes /1099511627776 ""  unidad
+		FinSi
+        Si bytes >= 1125899906842624  Entonces
+			unidad = "PB"
+            Escribir  bytes / 1125899906842624 "" unidad
+		FinSi
+		
+		
+FinAlgoritmo
+----------------------------
+*** Ejecución Iniciada. ***
+Ingresa los bytes
+> 30000
+los bytes son 29.296875KB
+*** Ejecución Finalizada. ***
