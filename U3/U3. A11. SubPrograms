@@ -1,0 +1,42 @@
+Diseña un algoritmo que emplee subprogramas / funciones / subprocesos, para calcular el área y volumen de 3 figuras geométricas diferentes. 
+
+El usuario debe poder elegir cuál figura desea calcular y mostrar sus resultados, el programa debe poder repetirse si el usuario lo desea y elegir otra opción.
+-----------------
+Algoritmo sin_titulo
+    Escribir " Que figura puede ingresar " "[1] cubo, [2]esfera,[3]cilindro"
+    leer fig
+	
+    si fig = 1 Entonces
+        escribir "ingresa el lado "
+        leer lado
+        area = 6*lado^2
+        volumen = lado^3
+        Escribir "el area es ", area,"elvolumen", volumen
+    FinSi
+    
+    si fig = 2 Entonces
+        Escribir "ingresa el radio"
+        leer radio
+        area = 4 * pi * radio^2
+        volumen = (3/4)*pi*radio^3
+        Escribir "el area es ", area, "el volumen es",volumen
+    FinSi
+    si fig = 3 Entonces
+        Escribir "ingresa el radio"
+        leer radio
+        escribir "ingresa la altura"
+        leer altura
+        area = 2* pi * radio + radio+altura
+        volumen = pi *radio^2*altura
+        Escribir "el area es ", area, "el volumen es",volumen
+    FinSi
+FinAlgoritmo
+
+----------------
+*** Ejecución Iniciada. ***
+ Que figura puede ingresar [1] cubo, [2]esfera,[3]cilindro
+> 1
+ingresa el lado
+> 4
+el area es 96elvolumen64
+*** Ejecución Finalizada. ***
